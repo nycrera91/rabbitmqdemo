@@ -20,7 +20,7 @@ public class RabbitmqdemoApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         SimpleMessage message = new SimpleMessage();
-        message.setName("FirstMessage");
+        message.setName("FirstMessagee");
         message.setDescription("SimpleDescription");
 
         rabbitTemplate.convertAndSend("TestExchange", "testRouting", message);
